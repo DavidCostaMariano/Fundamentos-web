@@ -1,0 +1,129 @@
+body
+{
+    text-align: justify;
+    font-family:helvetica;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    background-color: #101518;
+}
+
+ul
+{
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgba(32, 31, 31,0.1);
+}
+li
+{
+    float: left;
+   
+}
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #222D33;
+}
+.conteudo
+{
+    display: flex;
+}
+#nome{
+    margin-top: 120px;
+    font-size:5rem;
+    text-shadow: 0px 0px 30px #0d9b5457;
+    margin-bottom: 50px;
+
+}
+#nome:hover{
+    color: var(--blue);
+    transition: 0.5s;
+}
+#inicio
+{
+    font-size: 30px;
+    font-family:Georgia;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+}
+a{text-decoration: none;}
+#meu-passado{ 
+    font-size: 30px;
+    font-family:Georgia;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+}
+.imagem-fundo{
+    height: 620px;
+    width: 100%;
+    opacity: 10%;
+    position: absolute;
+}
+
+.active{
+    background-color: #101518;
+}
+h1{
+    
+    font-family:sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 0.2188rem var(--blue);
+}
+h2,h3
+{
+    color: var(--blue);
+    margin-bottom: 200px;
+}
+:root{
+    --black: #101518;
+    --white: #ffffcc;
+    --blue: #0d9b54;
+}
+#author {
+    bottom: 0;
+    left: 0;
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    }
+.contatos{
+    text-align: center;
+    width:100%
+    ;}
+.botao
+{
+    margin :20px 20px 0px 0px;
+    padding: 0.3rem;
+    border: #5997D9 solid;
+    background:none;
+    color: #5997D9;
+    font-size: 2rem;
+    cursor:pointer;
+    box-shadow: 0rem 0rem 0.625rem 0rem #5997D9;
+    width: 25%;
+    
+}
+.botao:hover {
+    background-color: #5997D9;
+    color:white;
+    transition: 0.8s;
+}
