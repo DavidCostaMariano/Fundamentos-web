@@ -95,8 +95,16 @@ a{
 #contatos{
     text-align: center;
 }
+.container-botao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
 .botao
 { 
+    
     margin :20px 20px 0px 0px;
     padding: 0.3rem;
     border: #5997D9 solid;
@@ -105,8 +113,9 @@ a{
     font-size: 2rem;
     cursor:pointer;
     box-shadow: 0rem 0rem 0.625rem 0rem #5997D9;
-    width: 25%;
+    width: 15rem;
     height: 3.5rem;
+    
     transition: transform 0.8s;
     
     
