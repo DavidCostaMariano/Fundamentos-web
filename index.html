@@ -8,21 +8,28 @@
         <title>Portifólio</title>
         </head>
         <body>
-        <nav id="navbar" class="menu">
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="sobre.html">Contatos</a>
+            <div class="dropdown">
+              <button class="dropbtn">Sessões 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a onclick='scrollNome()'>Sobre mim</a>
+                <a onclick='scrollGostos()'>Meus gostos</a>
+                <a onclick='scrollVideo()'>Video</a>
+              </div>
+            </div> 
+         </nav>
 
        
-        <section class="boas-vindas ml-rem mr-rem">
+        <section>
             <div class="conteudo">
-                <div id="inicio">  
+                <div id="inicio" class="ml-rem mr-rem">  
                    
                     <h1 id="nome" class="mb">Olá, Eu me chamo David Costa</h1>
-
-                    <h2>Desenvolvedor FullStack focado em Back-end</h2>
+                    <p class="ha">Desenvolvedor FullStack focado em Back-end</p>
                     <p>Tenho 19 anos, atualmente estou fazendo um bootcamp na Generation Brasil para me tornar um Desenvolvedor FullStack utilizando ferramentas como, Java, MySQL, Vs Code, Angular entre outras.
                     </p>
                 </div>
@@ -37,7 +44,25 @@
                 </div>
         </div>
         </section>
-
+        <section id="meus-gostos">
+            <div class="conteudo">
+                <div  class="ml-rem mr-rem">
+                    <h2 style="margin-bottom: 0px;">Meus gostos</h2>
+                    <p>Eu tenho muito apreço pela série DOCTOR WHO. O personagem principal é "O Doutor" é assim que ele é chamado. Ele é um alienigena da espécie dos senhores do tempo, essa espécie é capaz de viajar no tempo e no espaço, podendo ir para londres em 2000 A.C ou para Barcelona, O planeta! Ele sempre esteve vigiando os humanos e os protegendo, é incrivel os ensinamentos que a série trás através de frases curtas "todos mudamos, se pensarmos nisso, somos diversas pessoas ao longo da vida e tudo bem, isso é bom precisamos continuar em frente, mas sempre devemos lembrar de todos que fomos antes!"</p><br>
+                  <p style="text-align: center;">Um pequeno compilado sobre o Doutor:</p>
+                </div>
+        </div>
+        </section>
+        <div class="container" id="video">
+        <iframe 
+        style="align-items: center;"
+        width="500rem"
+        height="250"
+        src="https://www.youtube.com/embed/DcADLy1gCKQ" 
+        title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
         <footer id="autor">
             <hr>
             <a href="https://github.com/DavidCostaBKE" target="_blank">
@@ -51,6 +76,7 @@
             
         </hr>
     </footer>
+    <script src="./assets/Js/script.js"></script>
     </body>
     
 </html>

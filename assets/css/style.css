@@ -43,20 +43,32 @@ a{
 .conteudo
 {
     display: flex;
+    
 }
 #nome{
-    margin-top: 120px;
-    font-size:5rem;
-    text-shadow: 0px 0px 30px #0d9b5457;
-
+    margin-top: 5rem;
+    font-size:4.5rem;
+    text-shadow: 0px 0px 50px #0d869b;
+    transition:color 0.4s;
+    
+    
 }
 #nome:hover{
-    color: var(--green);
-    transition: 0.5s;
+    color: #0d869b;
+    
+   
+    
 }
 #inicio
 {
-    font-size: 30px;
+    font-size: 1.7rem;
+    font-family:Georgia;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: justify;
+}
+#meus-gostos{
+    font-size: 1.7rem;
     font-family:Georgia;
     color: rgb(255, 255, 255);
     width: 100%;
@@ -64,7 +76,7 @@ a{
 }
 
 #meu-passado{ 
-    font-size: 30px;
+    font-size: 1.7rem;
     font-family:Georgia;
     color: rgb(255, 255, 255);
     width: 100%;
@@ -73,6 +85,79 @@ a{
 .active{
     background-color: #161c20;
 }
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: rgba(32, 31, 31,0.1);
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #222D33;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: rgba(32, 31, 31,0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #222D33;
+    cursor:pointer;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 
 #autor {
@@ -84,9 +169,11 @@ a{
     font-family: 'Oswald', sans-serif;
     color: white;
     }
+    
 
 /*PAGINA SOBRE*/
 #entre-contato{
+
     font-size: 2rem;
     color: var(--green);
     margin-top: 2rem;
@@ -95,7 +182,7 @@ a{
 #contatos{
     text-align: center;
 }
-.container-botao{
+.container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -115,7 +202,6 @@ a{
     box-shadow: 0rem 0rem 0.625rem 0rem #5997D9;
     width: 15rem;
     height: 3.5rem;
-    
     transition: transform 0.8s;
     
     
@@ -130,11 +216,11 @@ a{
 /*VARIAVEIS GLOBAIS*/
 .ml-rem
 {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .mr-rem
 {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 .mb-50{
     margin-bottom: 50px;
@@ -149,16 +235,24 @@ a{
 :root{
     --black: #101518;
     --white: #ffffcc;
-    --green: #0d9b54;
+    --green: #0d869b;
 }
 h1{
     
     font-family:sans-serif;
     color: transparent;
-    -webkit-text-stroke: 0.2188rem var(--green);
+    -webkit-text-stroke: 0.2188rem #0d869b;
 }
 h2
 {
+    word-spacing: 2px;
+    word-wrap: break-word;
+    font-size: 3rem;
+    color: var(--green);
+    margin-bottom: 200px;
+}
+
+.ha{word-spacing: 2px;
     word-wrap: break-word;
     font-size: 3rem;
     color: var(--green);
