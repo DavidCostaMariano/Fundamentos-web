@@ -7,10 +7,10 @@ body
     margin: 0;
     background-color: #101518;
 }
-
+/*PAGINA INICIO*/
 ul
 {
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     flex-direction: row;
     display: flex;
     list-style: none;
@@ -21,6 +21,7 @@ ul
 }
 li
 {
+    padding: 0px 10px 0px 0px;
     float: left;
    
 }
@@ -28,12 +29,16 @@ li a
 {
     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
+
 li a:hover{
     background-color: #222D33;
+}
+a{
+    text-decoration: none;
 }
 .conteudo
 {
@@ -43,7 +48,6 @@ li a:hover{
     margin-top: 120px;
     font-size:5rem;
     text-shadow: 0px 0px 30px #0d9b5457;
-    margin-bottom: 50px;
 
 }
 #nome:hover{
@@ -56,47 +60,22 @@ li a:hover{
     font-family:Georgia;
     color: rgb(255, 255, 255);
     width: 100%;
-    margin-left: 2rem;
-    margin-right: 2rem;
     text-align: justify;
 }
-a{text-decoration: none;}
+
 #meu-passado{ 
     font-size: 30px;
     font-family:Georgia;
     color: rgb(255, 255, 255);
     width: 100%;
-    margin-left: 2rem;
-    margin-right: 2rem;
     text-align: justify;
 }
-.imagem-fundo{
-    height: 620px;
-    width: 100%;
-    opacity: 10%;
-    position: absolute;
+.active{
+    background-color: #161c20;
 }
 
-.active{
-    background-color: #101518;
-}
-h1{
-    
-    font-family:sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 0.2188rem var(--blue);
-}
-h2,h3
-{
-    color: var(--blue);
-    margin-bottom: 200px;
-}
-:root{
-    --black: #101518;
-    --white: #ffffcc;
-    --blue: #0d9b54;
-}
-#author {
+
+#autor {
     bottom: 0;
     left: 0;
     margin-top: 3rem;
@@ -105,6 +84,9 @@ h2,h3
     font-family: 'Oswald', sans-serif;
     color: white;
     }
+
+/*PAGINA SOBRE*/
+
 .contatos{
     text-align: center;
     width:100%
@@ -126,4 +108,40 @@ h2,h3
     background-color: #5997D9;
     color:white;
     transition: 0.8s;
+}
+
+/*VARIAVEIS GLOBAIS*/
+.ml-rem
+{
+    margin-left: 2rem;
+}
+.mr-rem
+{
+    margin-right: 2rem;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.p-30{
+    padding: 0px 30px 0px 30px;
+}
+.tc{
+    text-align: center;
+}
+:root{
+    --black: #101518;
+    --white: #ffffcc;
+    --blue: #0d9b54;
+}
+h1{
+    
+    font-family:sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 0.2188rem var(--blue);
+}
+h2,h3
+{
+    color: var(--blue);
+    margin-bottom: 200px;
 }
